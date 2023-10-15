@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #02BABA;
+    --secondary-color: #0D0D0D;
+    --bg-color: #f5f5f5;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    background-image: url(assets/banner-home.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3em 3em;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1em 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* INICIO MENU */
+nav ul{
+    font-size:1.1em;
+    font-weight: 500;
+    display: flex;
+    gap: 5em;
+}
+
+nav ul li a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+nav ul li a:active {
+    color: var(--secondary-color);
+}
+/* FIM MENU */
+
+/* INICIO CONTEUDO */
+aside{
+    width: 30%;
+    text-align: center;
+}
+
+section {
+    font-size: 1.3em;
+}
+
+section h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+section h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+section ul li {
+    font-size: 0.8em;
+}
+section ul li span {
+    font-size: 0.7em;
+}
+
+/* INICIO FORMULARIO */
+section form {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+section form input {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* FIM FORMULARIO */
+
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    text-align: center;
+    font-size: 1em;
+    padding: 1.3em;
+}

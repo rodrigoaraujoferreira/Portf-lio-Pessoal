@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ADD FAVICON -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Contato</title>
+</head>
+
+<body>
+    <!-- Inicio Cabeçalho com Menu -->
+    <header>
+        <!-- Logo com Link para paagina Index -->
+        <a href="index.html">
+            <img src="assets/logo.png" alt="Logotipo com as letras RF" style="width: 80px;">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <aside>
+                <img src="assets/forms 1.png" alt="Uma foto representando um formulario" width="200px">
+            </aside>
+
+            <section>
+                <h2>
+                    Se você tiver alguma dúvida,<br>
+                    sinta-se à vontade para entrar em contato.</h2>
+                <br>
+                <!-- FORMULARIO -->
+                <form>
+                    <label for="NomeCompleto">Nome Completo</label>
+                    <input type="text" id="NomeCompleto" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+
+                    <label for="wa">WhatsApp</label>
+                    <input type="number" id="wa" required>
+
+                    <fieldset>
+                        <legend>Como prefere o nosso contato?</legend>
+                        <label for="radio-email">
+                            <input type="radio" name="contato" value="email" id="radio-email">E-mail
+                        </label>
+                        <label for="radio-wa">
+                            <input type="radio" name="contato" value="whatsapp" id="radio-wa">WhatsApp
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Qual horário prefere que seja feito contato?</legend>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <textarea name="message" rows="6" cols="60">Deseja enviar uma mensagem?</textarea>
+                    </fieldset>
+
+                    <input type="submit" name="contato" value="Solicitar Contato" class="botao">
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Inicio footer -->
+    <footer>
+        <P>Rodrigo Ferreira - Todos os direitos reservados - 2023</P>
+    </footer>
+
+</body>
+
+</html>
